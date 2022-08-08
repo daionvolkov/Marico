@@ -1,2 +1,2 @@
 ## Marico
-###Training project in Flask with some JS
+### Training project in Flask with some JS
