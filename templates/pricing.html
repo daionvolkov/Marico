@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block first_page %}
+
+<div class="choose__title">Choose the plan that's right for you.</div>
+<div class="pricing__cards">
+    <div class="card-tariff" id="first">
+        <div class="card-tariff-title">Starer</div>
+        <div class="card-tariff-subtitle">Perfect for tying out Wavium</div>
+        <div class="card-tariff-cost">Free</div>
+        <div class="card-tariff-period">Collect Unlimited subscribers
+            <br> <span>2000 monthly emails</span> </div>
+        <div class="card-tariff-context">Upgrade to send more emails</div>
+        <div class="card-tariff-about">Key features
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt="">Automatic updating home page</p>
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt="">Unlimited sources + posts</p>
+        </div>
+        <div class="card-tariff-btn-block">
+            <a id="first_btn" class="card-tariff-btn" href="">start for free</a>
+        </div>
+    </div>
+    <div class="card-tariff" id="second">
+        <div class="card-tariff-title">Basic</div>
+        <div class="card-tariff-subtitle">Build your online home</div>
+        <div class="card-tariff-cost">$14 <span>Per month </span>
+            <p>or $19/mo, billed monthly</p></div>
+        <div class="card-tariff-period">Collect Unlimited subscribers
+            <br> <span>500 monthly emails</span> </div>
+        <div class="card-tariff-context">Purchase more for $0.002 per email</div>
+        <div class="card-tariff-about">Key features
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt="">Automatic updating home page</p>
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt="">Unlimited sources + posts</p>
+        </div>
+        <div class="card-tariff-btn-block">
+            <a id="second_btn" class="card-tariff-btn" href="">Start Free 14-day Trial</a>
+        </div>
+    </div>
+    <div class="card-tariff" id="third">
+        <div class="card-tariff-title">Complete</div>
+        <div class="card-tariff-subtitle">Enhanced engagement</div>
+        <div class="card-tariff-cost">$39 <span>Per month </span>
+            <p>or $34/mo, billed monthly</p></div>
+        <div class="card-tariff-period">Collect Unlimited subscribers
+            <br> <span>10000 monthly emails</span> </div>
+        <div class="card-tariff-context">Purchase more for $0.002 per email</div>
+        <div class="card-tariff-about">Key features
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt=""> Automatic updating home page</p>
+            <p><img src="{{url_for('static', filename='img/check.svg')}}" alt="">Unlimited sources + posts</p>
+        </div>
+        <div class="card-tariff-btn-block">
+            <a id="third_btn" class="card-tariff-btn" href="">Start Free 14-day Trial</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

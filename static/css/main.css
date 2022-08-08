@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
+@import url('header.css');
+@import url('first-page.css');
+@import url('about.css');
+@import url('pricing.css');
+@import url('blog.css');
+@import url('signup.css');
+@import url('footer.css');
+/*==================================================*/
+/*Обнуление*/
+* {padding: 0; margin: 0; border: 0; box-sizing: border-box;}
+*,*:before, *:after {box-sizing:border-box;}
+*:focus, *:active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px;}
+input, button, textarea {display: inherit;}
+button {cursor: pointer;}
+a, a:visited {text-decoration: none; display: inline-block;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: inherit;}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+body {
+    background-color: #000;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.blue_btn {
+    padding: 23px 74px 23px 74px;
+    background: #326CF9;
+    border-radius: 7px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.black_btn {
+    padding: 23px 74px 23px 74px;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    color: #707070;
+    font-size: 18px;
+    font-weight: 500;
+}
+.small_blue_btn {
+    padding: 15px 20px 15px 20px;
+    background: #326CF9;
+    border-radius: 7px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+.small_black_btn {
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media (max-width: 1000px) {
+.black_btn,
+.blue_btn {
+    padding: 11px 36px 11px 36px;
+    font-size: 12px;
+    font-weight: 500;
+}
+    .small_blue_btn,
+    .small_black_btn{
+    padding: 7px 10px 7px 10px;
+    font-size: 12px;
+
+    }
+}
+@media (max-width: 600px) {
+.black_btn,
+.blue_btn {
+    padding: 6px 17px 6px 17px;
+    font-size: 8px;
+    font-weight: 300;
+}
+}

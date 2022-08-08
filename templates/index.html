@@ -1,0 +1,106 @@
+
+{% extends 'base.html' %}
+{% block first_page %}
+<main class="main">
+    <div class="container">
+        <div class="content__block">
+            <div class="content__block-title">Own your audience.</div>
+            <div class="content__block-subtitle">So you don't lose them.</div>
+            <div class="content__block-text">Turn your audience into email and <br>
+                    text message subscribers.
+            </div>
+            <div class="content__block-btn">
+                <a href="#" class="get-btn blue_btn">Get Started Now</a>
+                <a href="#" class="get-btn  black_btn">View A Demo</a>
+            </div>
+            <div class="content__block-raiting"><img src="{{url_for('static', filename='img/dot.svg')}}" alt=""> 1000+<span> creators have already started</span></div>
+        </div>
+    </div>
+    <div class="step1__block">
+        <div class="step1__block-first">
+            <div class="step1__block-inner">step 1</div>
+            <div class="step1__block-title">Connect Your Content</div>
+            <div class="step1__block-text">Bring all of your content together and get a Homepage that <br>
+                automatically updates whenever you create anywhere online.</div>
+            <div class="step1__block-btn">
+                <a href="#" class="get-btn  black_btn">View Avaliable Sources</a>
+            </div>
+        </div>
+        <div class="step1__block-homepage">
+            <div class="homepage-content">
+                <div class="homepage-content-inner">your homepage</div>
+                <div class="homepage-content-title">Your content. <br> All in <span>One Spat</span></div>
+                <div class="homepage-content-list">
+                    <p> <span>1</span> Your page automatically updates whenever you create.</p>
+                    <p> <span>2</span> Bring all of your content together into one homepage.</p>
+                </div>
+                <div class="homepage__content-btn">
+                     <a href="#" class="get-btn small_blue_btn">Get Started Now</a>
+                    <a href="#" class="get-btn  small_black_btn">View A Demo</a>
+                </div>
+            </div>
+            <div class="homepage-img">
+                <img src="{{url_for('static', filename='img/charie.png')}}" alt="">
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="step2-title">
+            <div class="step2-inner">step 2</div>
+            <div class="step2-title">Share Your Homepage</div>
+            <div class="step2-text">Share your Wavium homepage link with your followers, and <br>
+                we'll handle the rest.</div>
+        </div>
+        <div class="step2__block">
+            <div class="step2__block-onelink">
+                <div class="onelink-inner">one link</div>
+                <div class="onelink-title">all you create. <span>on link</span></div>
+                <div class="onelink-img"><img src="{{url_for('static', filename='img/mobile.png')}}" alt=""></div>
+            </div>
+            <div class="step2__block-collect">
+                <div class="collect-inner">collect subscribers</div>
+                <div class="collect-email">emails.</div>
+                <div class="collect-phone">phone #s.</div>
+                <div class="collect-allyours">all yours</div>
+
+            </div>
+        </div>
+        <div class="step2-btn">
+            <a href="#" class="get-btn small_blue_btn">Get Started Now</a>
+        </div>
+
+        <div class="step3__block-first">
+            <div class="step3__block-inner">step 3</div>
+            <div class="step3__block-title">Send Emails & Text Messages</div>
+            <div class="step3__block-text">No more going through a social platform. Reach and engage <br>
+                your audience directly over email and text massage.</div>
+
+        </div>
+        <div class="step3__block-homepage">
+            <div class="homepage-content">
+                <div class="homepage-content-inner">Create & Share</div>
+                <div class="homepage-content-title">Reach Your<br>Audience <span>Directly.</span></div>
+                <div class="homepage-content-list">
+                    <p> <span>1</span> Embed content or create something new to share.</p>
+                    <p> <span>2</span> Share content over email, text message or your homepage.</p>
+                </div>
+                <div class="homepage__content-btn">
+                     <a href="#" class="get-btn small_blue_btn">Get Started Now</a>
+                    <a href="#" class="get-btn  small_black_btn">View A Demo</a>
+                </div>
+            </div>
+            <div class="homepage-img">
+                <img src="{{url_for('static', filename='img/screen.png')}}" alt="">
+            </div>
+        </div>
+        <div class="experts">Experts Agree
+            <img src="{{url_for('static', filename='img/experts.png')}}" alt="">
+            <div class="experts-faces">
+                We've helped over 1,000 creatorsre <br>
+                claim control of their audience.
+            </div>
+
+        </div>
+
+    </div>
+</main>
+{% endblock %}

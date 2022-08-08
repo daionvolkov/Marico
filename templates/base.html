@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/main.css') }}">
+
+    <title>Marico</title>
+</head>
+<body>
+
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<header class="header">
+    <div class="header__block">
+        <div class="header__block-logo">
+            <a class="logo-link" href="/"><img class="header__block-logo-img" src="{{ url_for('static', filename='img/logo.svg') }}" alt="logo">
+            </a>
+            <a class="logo-link-small" href="/"><img class="header__block-logo-img" src="{{ url_for('static', filename='img/footer-logo.svg') }}" alt="logo">
+            </a>
+        </div>
+        <div class="header__block-menu">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="" class="menu__link">use cases</a> </li>
+                    <li class="menu__item">
+                        <a  id="/about" href="{{url_for('about')}}" class="menu__link">about</a> </li>
+                    <li class="menu__item">
+                        <a id="/pricing" href="{{url_for('pricing')}}" class="menu__link">pricing</a> </li>
+                    <li class="menu__item">
+                        <a id="/blog" href="{{url_for('blog')}}" class="menu__link">blog </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__block-btn">
+            <a href="{{url_for('login')}}" class="login__btn">login</a>
+            <a href="{{url_for('signup')}}" class="signup__btn">sign up</a>
+        </div>
+    </div>
+</header>
+
+{% block first_page %}
+{% endblock %}
+
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer-logo"><img src="{{url_for('static', filename='img/footer-logo.svg')}}" alt=""> </div>
+            <div class="footer-title">Get Started Now</div>
+            <div class="footer-text">Setup is easy and takes under 5 minutes.</div>
+            <br><br><br>
+            <div class="footer-btn">
+                <a href="#" class="get-btn blue_btn">Get Started Now</a> <br><br>
+            </div>
+            <div class="content__block-raiting footer-raiting"><img src="{{url_for('static', filename='img/dot.svg')}}" alt=""> 1000+<span> creators have already started</span></div>
+        </div>
+        </div>
+        <div class="footer__bottom container">
+            <div class="footer__bottom-logo">
+                <a class="logo-link" href="#"><img class="header__block-logo-img" src="{{ url_for('static', filename='img/logo.svg') }}" alt="logo">
+                <p>info@marico.co</p>
+            </div>
+            <div class="footer__bottom-menu">
+                <nav class="footer__bottom-menu-list">
+                     <ul class="menu__list">
+                        <li class="menu__item "><a href="{{url_for('about')}}" class="menu__link">about</a> </li>
+                        <li class="menu__item"><a href="{{url_for('pricing')}}" class="menu__link">pricing</a> </li>
+                        <li class="menu__item"><a href="{{url_for('blog')}}" class="menu__link">blog </a></li>
+                         <li class="menu__item"><a href="{{url_for('signup')}}" class="menu__link">sign un </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+</body>
+</html>

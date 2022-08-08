@@ -1,0 +1,88 @@
+.signup__title,
+.bottom__block{
+    font-size: 75px;
+    font-weight: 600;
+    padding: 80px 0 34px 0;
+    text-align: center;
+}
+.signup__subtitle,
+.bottom__block-text{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.register__block form {
+    margin-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+}
+.user_icon {
+    position: absolute;
+    left: 450px;
+    top: 10px;
+}
+.email_icon {
+    position: absolute;
+    left: 1160px;
+    top: 10px;
+
+}
+.register__block input {
+    height: 52px;
+    width: 487px;
+    font-size: 23px;
+    font-weight: 400;
+    border-bottom: 1px solid #2D2D2D;
+    background-color: #000;
+    color: #fff;
+}
+.pass-input {
+    margin-top: 63px;
+}
+
+
+.sign-btn {
+    height: 52px;
+    width: 487px;
+    background-color: #326CF9;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    padding-left: 244px;
+    margin-top: 75px;
+}
+#show {
+    position: absolute;
+    top: 155px;
+    left: 448px;
+    color: #676666;
+    font-size: 28px;
+}
+.signwith__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 46px;
+}
+.signwith__block-btn {
+    padding: 21px 103px 20px 103px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.signwith__block-btn a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 8px 0 0 5px;
+}
+
+.signup__footer-context a {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 200px 0 0 0;
+    color: #fff;
+}

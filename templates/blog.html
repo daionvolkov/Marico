@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block first_page %}
+
+<div class="content-title">Content Sources</div>
+<div class="content-subtitle">Connect these sources to your Marico homepage.</div>
+
+<div class="block__contacts container">
+    <div class="block__contacts-horiz">
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/twitter.svg')}}" alt=""> </div>
+            <div class="card-title">Twitter</div>
+            <div class="card-text">Connect your Twitter feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/youtube.svg')}}" alt=""> </div>
+            <div class="card-title">YouTube</div>
+            <div class="card-text">Connect your YouTube feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/wordpress.svg')}}" alt=""> </div>
+            <div class="card-title">WordPress</div>
+            <div class="card-text">Connect your WordPress feed to <br>
+                your Marico homepage.</div>
+        </div>
+    </div>
+    <br><br>
+        <div class="block__contacts-horiz">
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/substack.svg')}}" alt=""> </div>
+            <div class="card-title">Substack</div>
+            <div class="card-text">Connect your Substack feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/medium.svg')}}" alt=""> </div>
+            <div class="card-title">Medium</div>
+            <div class="card-text">Connect your Medium feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img">
+                <img src="{{url_for('static', filename='img/wordpress.svg')}}" alt="">
+                 <div class="coming"> <p>Coming soon</p> </div>
+            </div>
+            <div class="card-title">RSS Feeds</div>
+            <div class="card-text">Connect your RSS feed  to <br>
+                your Marico homepage.</div>
+        </div>
+    </div>
+    <br><br>
+        <div class="block__contacts-horiz">
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/spotify.svg')}}" alt=""> </div>
+            <div class="card-title">Spotify</div>
+            <div class="card-text">Connect your Spotify feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/anchor.svg')}}" alt=""> </div>
+            <div class="card-title">Anchor</div>
+            <div class="card-text">Connect your Anchor feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img"><img src="{{url_for('static', filename='img/podcasts.svg')}}" alt=""> </div>
+            <div class="card-title">Apple Podcasts</div>
+            <div class="card-text">Connect your Podcasts feed to <br>
+                your Marico homepage.</div>
+        </div>
+    </div>
+    <br><br>
+        <div class="block__contacts-horiz">
+        <div class="horiz-card">
+            <div class="card-img">
+                <img src="{{url_for('static', filename='img/instagram.svg')}}" alt="">
+                 <div class="coming"> <p>Coming soon</p> </div>
+            </div>
+            <div class="card-title">Instagram</div>
+            <div class="card-text">Connect your Instagram feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img">
+                <img src="{{url_for('static', filename='img/linkedin.svg')}}" alt="">
+                 <div class="coming"> <p>Coming soon</p> </div>
+            </div>
+            <div class="card-title">Linkedin</div>
+            <div class="card-text">Connect your Linkedin feed to <br>
+                your Marico homepage.</div>
+        </div>
+        <div class="horiz-card">
+            <div class="card-img">
+                <img src="{{url_for('static', filename='img/facebook.svg')}}" alt="">
+                <div class="coming"> <p>Coming soon</p> </div>
+            </div>
+            <div class="card-title">Facebook</div>
+            <div class="card-text">Connect your Facebook feed to <br>
+                your Marico homepage.</div>
+        </div>
+    </div>
+</div>
+<div class="experts">
+    <div class="experts-faces">
+        We've helped over 1,000 creatorsre <br>
+        claim control of their audience.
+    </div>
+
+</div>
+
+
+{% endblock %}
