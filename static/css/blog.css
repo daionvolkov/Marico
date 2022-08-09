@@ -51,4 +51,47 @@ div.coming p{
     font-weight: 400;
     line-height: 30px;
 }
+@media (max-width: 1252px) {
+    .block__contacts-horiz {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .horiz-card {
+        padding: 15px 0 10px 15px;
+        width: 280px;
+        height: 200px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
+    .card-title {
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+    .card-text {
+        color: #828282;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+}
 
+}
+@media (max-width: 500px) {
+    .content-title {
+        padding: 50px 0 10px 0;
+        font-size: 60px;
+        font-weight: 600;
+        text-align: center;
+}
+    .content-subtitle {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 40px;
+}
+    .experts {
+        display: none;
+    }
+}

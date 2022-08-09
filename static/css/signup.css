@@ -17,18 +17,16 @@
     justify-content: space-between;
     gap: 10px;
     position: relative;
-}
-.user_icon {
-    position: absolute;
-    left: 450px;
-    top: 10px;
-}
-.email_icon {
-    position: absolute;
-    left: 1160px;
-    top: 10px;
 
 }
+.username_input {
+    background: url("/static/img/user.svg") 450px 10px no-repeat;
+}
+.email_input {
+    background: url("/static/img/email.svg") 450px 10px no-repeat;
+}
+
+
 .register__block input {
     height: 52px;
     width: 487px;
@@ -77,7 +75,6 @@
     color: #fff;
     margin: 8px 0 0 5px;
 }
-
 .signup__footer-context a {
     display: flex;
     justify-content: center;
@@ -85,4 +82,29 @@
     font-weight: 500;
     padding: 200px 0 0 0;
     color: #fff;
+}
+@media (max-width: 1316px) {
+    .register__block form {
+        margin-top: 40px;
+        flex-wrap: wrap;align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .user_icon {
+        position: absolute;
+        left: 800px;
+        top: 10px;
+    }
+    .pass_block {
+        position: relative;
+    }
+    .pass_block i{
+        position: absolute;
+        bottom: 110px;
+    }
+    .email_icon {
+        position: absolute;
+        left: 800px;
+        top: 220px;
+    }
 }

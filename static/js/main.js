@@ -6,7 +6,7 @@ $(function () {
         let link = $(this).find('a').attr('id');
  
         if (cur_url === link) {
-            $(this).addClass('active');
+            $(this).addClass('active_menu');
         }
     });
 });

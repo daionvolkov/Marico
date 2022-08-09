@@ -23,6 +23,9 @@
             <a class="logo-link-small" href="/"><img class="header__block-logo-img" src="{{ url_for('static', filename='img/footer-logo.svg') }}" alt="logo">
             </a>
         </div>
+
+
+
         <div class="header__block-menu">
             <nav class="menu">
                 <ul class="menu__list">
@@ -36,12 +39,34 @@
                 </ul>
             </nav>
         </div>
+
+
         <div class="header__block-btn">
             <a href="{{url_for('login')}}" class="login__btn">login</a>
             <a href="{{url_for('signup')}}" class="signup__btn">sign up</a>
         </div>
+        <div class="nav-right visible-xs">
+            <div class="button" id="btn">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+            </div>
+         </div>
+
+        <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+            <i class="fa fa-user"></i>
+        </a>
     </div>
+
+<div class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item"><a href="{{url_for('about')}}" class="sidebar-anchor">about</a></li>
+    <li class="sidebar-item"><a href="{{url_for('pricing')}}" class="sidebar-anchor">pricing</a></li>
+    <li class="sidebar-item"><a href="{{url_for('blog')}}" class="sidebar-anchor">blog</a></li>
+  </ul>
+</div>
 </header>
+
 
 {% block first_page %}
 {% endblock %}
@@ -77,6 +102,7 @@
         </div>
     </footer>
 <script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="{{url_for('static', filename='js/burger.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
